@@ -4513,6 +4513,7 @@ int RsaSign(WOLFSSL* ssl, const byte* in, word32 inSz, byte* out,
     }
     else
 #endif
+WOLFSSL_MSG("hello world");
 #if defined(HAVE_PK_CALLBACKS)
     if (ssl->ctx->RsaSignCb) {
         void* ctx = wolfSSL_GetRsaSignCtx(ssl);
